@@ -2,33 +2,31 @@
 <html>
 <head>
     <title>Trivia Quiz</title>
+    <style>
+        blockquote {
+            max-width: 600px;
+            margin: 10px;
+            padding: 15px;
+            border-left: 8px solid green;
+            background-color: #f8fffe;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Question -->
     <h2>What is the captial of India?</h2>
 
-    <!-- Options -->
-    <form>
-        <input type="radio" id="delhi" name="capital" value="New Delhi">
-        <label for="delhi">New Delhi</label><br>
+    <input type="radio" name="capital" id="delhi">
+    <label for="delhi">New Delhi</label>
+    <br>
 
-        <input type="radio" id="mumbai" name="capital" value="Mumbai">
-        <label for="mumbai">Mumbai</label>
-    </form>
+    <input type="radio" name="capital" id="mumbai">
+    <label for="mumbai">Mumbai</label>
 
-    <!-- Quotation -->
-    <blockquote style="
-        max-width: 600px;
-        margin: 10px;
-        padding: 15px;
-        border-left: 8px solid green;
-        background-color: #f8fffe;
-        font-weight: bold;
-    ">
-        New Delhi is the capital of India and an administrative district of NCT Delhi.
-        <br>
-        — Wikipedia
+    <!-- FIXED BLOCKQUOTE -->
+    <blockquote cite="https://en.wikipedia.org/wiki/New_Delhi">
+        "New Delhi is the capital of India and an administrative district of NCT Delhi." - Wikipedia
     </blockquote>
 
 </body>
